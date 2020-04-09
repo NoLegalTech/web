@@ -151,15 +151,15 @@ article#servicios > section > h3 {
 
 article#servicios > section[data-name=NO] > h3 {
     height: 120px;
-    background-image: url(../img/service-no.png);
+    background-image: url(../img/services/no.png);
 }
 
 article#servicios > section[data-name=legal] > h3 {
-    background-image: url(../img/service-legal.png);
+    background-image: url(../img/services/legal.png);
 }
 
 article#servicios > section[data-name=tech] > h3 {
-    background-image: url(../img/service-tech.png);
+    background-image: url(../img/services/tech.png);
 }
 
 @media only screen and (min-width: 600px) {
