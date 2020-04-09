@@ -83,6 +83,8 @@ body > footer > section.logo {
 body > footer > section.links {
     padding: 0;
     height: 130px;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 body > footer > section.links > article {
@@ -100,7 +102,6 @@ body > footer > section.links > article.social a {
 }
 
 body > footer > section.links > article.social {
-    width: 40%;
     padding: 0;
     text-align: right;
 }
@@ -114,7 +115,6 @@ body > footer > section.links > article.social a.instagram {
 }
 
 body > footer > section.links > article.legal {
-    width: 60%;
     float: right;
     text-align: left;
     padding: 0;
@@ -160,6 +160,7 @@ body > footer > section.links > article.legal {
         padding-right: 5%;
     }
     body > footer > section.links {
+        display: block;
         width: 80%;
         height: 130px;
         text-align: right;
