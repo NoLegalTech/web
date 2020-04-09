@@ -17,6 +17,10 @@ a:hover {
     text-decoration: underline;
 }
 
+.bold {
+    font-weight: 500;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -125,6 +129,23 @@ body > footer > section.links > article.legal {
 body > footer > section.links > article.social,
 body > footer > section.links > article.legal {
     padding-bottom: 100px;
+}
+
+article#servicios {
+}
+
+article#servicios > section[data-name=NO] {
+    text-align: center;
+    padding: 1% 10%;
+}
+
+article#servicios > section[data-name=NO] > h3 {
+    height: 120px;
+    background-image: url(../img/service-no.png);
+    text-indent: -9999px;
+    background-size: auto 75%;
+    background-position: center 70%;
+    background-repeat: no-repeat;
 }
 
 @media only screen and (min-width: 600px) {
