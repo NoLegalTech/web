@@ -153,6 +153,10 @@ article#servicios > section[data-name=legal] > h3 {
     background-image: url(../img/service-legal.png);
 }
 
+article#servicios > section[data-name=tech] > h3 {
+    background-image: url(../img/service-tech.png);
+}
+
 @media only screen and (min-width: 600px) {
     body > header,
     body > nav {
