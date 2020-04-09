@@ -80,7 +80,16 @@ body > footer > section.logo {
     background-position: center;
 }
 
-body > footer > section.social a {
+body > footer > section.links {
+    padding: 0;
+    height: 130px;
+}
+
+body > footer > section.links > article {
+    display: inline-block;
+}
+
+body > footer > section.links > article.social a {
     width: 50px;
     height: 50px;
     background-size: 80%;
@@ -90,21 +99,21 @@ body > footer > section.social a {
     background-repeat: no-repeat;
 }
 
-body > footer > section.social {
+body > footer > section.links > article.social {
     width: 40%;
     padding: 0;
     text-align: right;
 }
 
-body > footer > section.social a.twitter {
+body > footer > section.links > article.social a.twitter {
     background-image: url(../img/twitter.png);
 }
 
-body > footer > section.social a.instagram {
+body > footer > section.links > article.social a.instagram {
     background-image: url(../img/instagram.png);
 }
 
-body > footer > section.legal {
+body > footer > section.links > article.legal {
     width: 60%;
     float: right;
     text-align: left;
@@ -113,8 +122,8 @@ body > footer > section.legal {
     padding-left: 5%;
 }
 
-body > footer > section.social,
-body > footer > section.legal {
+body > footer > section.links > article.social,
+body > footer > section.links > article.legal {
     padding-bottom: 100px;
 }
 
@@ -136,6 +145,9 @@ body > footer > section.legal {
     body > header,
     body > nav {
         height: 792px;
+    }
+    body > footer {
+        background-size: auto 100%;
     }
 }
 
