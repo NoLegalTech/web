@@ -138,6 +138,7 @@ article#servicios .bold {
 article#servicios > section {
     text-align: center;
     padding: 1% 10%;
+    font-size: 1.2em;
 }
 
 article#servicios > section > h3 {
