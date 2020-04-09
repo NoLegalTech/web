@@ -132,6 +132,9 @@ body > footer > section.links > article.legal {
     body > nav {
         height: 400px;
     }
+    body > footer {
+        background-size: auto 100%;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -139,15 +142,47 @@ body > footer > section.links > article.legal {
     body > nav {
         height: 600px;
     }
+    body > footer {
+        background-size: auto 100%;
+    }
+    body > footer > section.logo {
+        width: 20%;
+        background-size: 60%;
+        background-position: 60% 40%;
+    }
+    body > footer > section.contact {
+        width: 80%;
+        height: 120px;
+        margin-top: 300px;
+        text-align: right;
+        padding: 0;
+        padding-top: 70px;
+        padding-right: 5%;
+    }
+    body > footer > section.links {
+        width: 80%;
+        height: 130px;
+        text-align: right;
+        padding: 0;
+        padding-right: 5%;
+    }
+    body > footer > section.links > article.social {
+        padding: 0;
+    }
+    body > footer > section.links > article.legal {
+        width: auto;
+        padding-right: 5%;
+        text-align: right;
+        padding-left: 2%;
+        padding: 0;
+        padding-left: 2%;
+    }
 }
 
 @media only screen and (min-width: 1440px) {
     body > header,
     body > nav {
         height: 792px;
-    }
-    body > footer {
-        background-size: auto 100%;
     }
 }
 
