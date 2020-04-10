@@ -225,6 +225,21 @@ article#proyectos nav a:hover {
     box-shadow: 5px 5px 20px #707070;
 }
 
+article#legal {
+    padding: 0 5%;
+    padding-top: 50px;
+    margin-bottom: 300px;
+    font-size: 1.5em;
+    background-color: var(--light-gray);
+}
+article#legal a {
+    font-size: 1em;
+}
+article#legal blockquote {
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
 @media only screen and (min-width: 600px) {
     body > header,
     body > nav {
@@ -254,6 +269,9 @@ article#proyectos nav a:hover {
     article#proyectos footer {
         grid-column: 1/3;
         padding: 0;
+    }
+    article#legal {
+        background-color: var(--white);
     }
 }
 
