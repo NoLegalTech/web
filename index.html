@@ -12,9 +12,9 @@
 
         <nav>
             <ul>
-                <li><a data-scroll-to="servicios" href="#">Servicios</a></li>
-                <li><a data-scroll-to="proyectos" href="#">Proyectos</a></li>
-                <li><a data-scroll-to="contacto"  href="#">Contacto</a></li>
+                <li><a data-scroll-to="servicios" href="#servicios">Servicios</a></li>
+                <li><a data-scroll-to="proyectos" href="#proyectos">Proyectos</a></li>
+                <li><a data-scroll-to="contacto" href="#contacto">Contacto</a></li>
             </ul>
         </nav>
 
@@ -190,7 +190,7 @@
                     <img src="img/projects/nosediceasi.png" />
                 </a>
                 <h3><a href="https://twitter.com/nosediceasi" target="_blank">
-                    Nosedicequerellacriminal
+                    No-se-dice-querella-criminal
                </a></h3>
                 <p>
                    Bot en Twitter contra delitos linguisticos. 
@@ -233,7 +233,7 @@
         <footer>
             <section class="logo">
             </section>
-            <section class="contact">
+            <section id="contacto" class="contact">
                 <a href="mailto:hola@nolegaltech.com">hola@nolegaltech.com</a>
             </section>
             <section class="links">
@@ -246,20 +246,5 @@
                 </article>
             </section>
         </footer>
-
-        <script src="js/utils.js"></script>
-        <script language="javascript">
-            onPageLoad(() => {
-                element('a[data-scroll-to=servicios]').onClick(() => {
-                    scrollTo('#servicios');
-                });
-                element('a[data-scroll-to=proyectos]').onClick(() => {
-                    scrollTo('#proyectos');
-                });
-                element('a[data-scroll-to=contacto]').onClick(() => {
-                    scrollTo('body > footer');
-                });
-            });
-        </script>
     </body>
 </html>
