@@ -1,0 +1,447 @@
+:root {
+    --nlt-blue: #1995DC;
+    --black: #000000;
+    --white: #ffffff;
+    --light-gray: #f5f5f5;
+    --dark-gray: #707070;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, section, article, p, div, header, footer {
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--nlt-blue);
+    text-decoration: none;
+    font-size: 1.8em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body > nav {
+    position: absolute;
+    width: 95%;
+    height: 300px;
+    margin-right: 5%;
+    background-image: url(../img/rabbit.png);
+    background-size: auto 25%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+body > nav > ul {
+    display: none;
+}
+
+body > header {
+    width: 100%;
+    background-color: var(--nlt-blue);
+    background-image: url(../img/logo.png);
+    height: 300px;
+    background-size: auto 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--nlt-blue);
+    font-size: 1px;
+}
+
+body > footer {
+    background-color: var(--light-gray);
+    width: 100%;
+    background-image: url(../img/team.png);
+    height: 300px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    margin-top: -300px;
+}
+
+body > footer a {
+    color: var(--white);
+}
+
+body > footer > section {
+    background-color: var(--nlt-blue);
+    width: 100%;
+    height: 50px;
+    float: left;
+    position: relative;
+    padding: 0 10%;
+    text-align: center;
+}
+
+body > footer > section.logo {
+    margin-top: 300px;
+    background-color: var(--nlt-blue);
+    background-image: url(../img/logo_simple.png);
+    height: 250px;
+    background-size: auto 45%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body > footer > section.links {
+    padding: 0;
+    height: 130px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+body > footer > section.links > article {
+    display: inline-block;
+}
+
+body > footer > section.links > article.social a {
+    width: 50px;
+    height: 50px;
+    background-size: 80%;
+    background-position: center;
+    display: inline-block;
+    background-color: var(--nlt-blue);
+    background-repeat: no-repeat;
+}
+
+body > footer > section.links > article.social {
+    padding: 0;
+    text-align: right;
+}
+
+body > footer > section.links > article.social a.twitter {
+    background-image: url(../img/twitter.png);
+}
+
+body > footer > section.links > article.social a.instagram {
+    background-image: url(../img/instagram.png);
+}
+
+body > footer > section.links > article.legal {
+    float: right;
+    text-align: left;
+    padding: 0;
+    line-height: 50px;
+    padding-left: 5%;
+}
+
+body > footer > section.links > article.social,
+body > footer > section.links > article.legal {
+    padding-bottom: 100px;
+}
+
+article#servicios {
+    color: var(--dark-gray);
+}
+
+article#servicios .bold {
+    color: #000;
+}
+
+article#servicios > section {
+    text-align: center;
+    padding: 1% 10%;
+    font-size: 1.2em;
+}
+
+article#servicios > section > h3 {
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    height: 100px;
+    background-size: auto 75%;
+    background-position: center 70%;
+}
+
+article#servicios > section[data-name=NO] > h3 {
+    height: 120px;
+    background-image: url(../img/services/no.png);
+}
+
+article#servicios > section[data-name=legal] > h3 {
+    background-image: url(../img/services/legal.png);
+}
+
+article#servicios > section[data-name=tech] > h3 {
+    background-image: url(../img/services/tech.png);
+}
+
+article#proyectos {
+    background-color: var(--light-gray);
+}
+
+article#proyectos > header > h2 {
+    font-size: 3em;
+    color: var(--nlt-blue);
+    text-align: center;
+    font-weight: normal;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+article#proyectos > section > a > img {
+    width: 100%;
+}
+
+article#proyectos h3 {
+    text-align: center;
+}
+
+article#proyectos h3 > a {
+    font-weight: normal;
+}
+
+article#proyectos p {
+    padding: 0 10%;
+    padding-bottom: 60px;
+    font-size: 1.2em;
+}
+
+article#proyectos footer {
+    height: 300px;
+    margin-top: 0px;
+    padding: 5%;
+}
+
+article#proyectos nav a {
+    display: inline;
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--dark-gray);
+    font-size: 2em;
+    padding: 10px 20px;
+}
+
+article#proyectos nav a:hover {
+    background: var(--light-gray);
+    text-decoration: none;
+    box-shadow: 5px 5px 20px #707070;
+}
+
+article.main-article {
+    padding: 0 5%;
+    padding-top: 50px;
+    margin-bottom: 300px;
+    font-size: 1.5em;
+    background-color: var(--light-gray);
+}
+
+article.main-article h1,
+article.main-article h2,
+article.main-article h3,
+article.main-article h4,
+article.main-article h5 {
+    color: var(--nlt-blue);
+}
+
+article.main-article a {
+    font-size: 1em;
+}
+
+article.main-article blockquote {
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+article.main-article section.image-links {
+    display: grid;
+    grid-template-columns: auto;
+    grid-column-gap: 20px;
+}
+
+article.main-article section.image-links > a {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--dark-gray);
+}
+
+article.main-article section.image-links > a > img {
+    width: 100%;
+    opacity: 0.9;
+}
+
+article.main-article section.image-links > a:hover > img {
+    opacity: 1;
+}
+
+@media only screen and (min-width: 600px) {
+    body > header,
+    body > nav {
+        height: 400px;
+    }
+    body > footer {
+        background-size: auto 100%;
+        background-color: var(--white);
+    }
+    article#proyectos {
+        display: grid;
+        grid-template-columns: 47% 47%;
+        grid-column-gap: 6%;
+        padding: 0 5%;
+        background-color: var(--white);
+    }
+    article#proyectos > header {
+        grid-column: 1/3;
+    }
+    article#proyectos h3 {
+        text-align: left;
+    }
+    article#proyectos p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    article#proyectos footer {
+        grid-column: 1/3;
+        padding: 0;
+    }
+    article.main-article {
+        background-color: var(--white);
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    body > header,
+    body > nav {
+        height: 600px;
+    }
+    body > nav > ul {
+        display: grid;
+        list-style: none;
+        grid-template-columns: auto auto auto auto auto;
+        float: right;
+        text-transform: lowercase;
+        grid-column-gap: 0.5em;
+        padding-top: 2%;
+    }
+    body > nav > ul:before,
+    body > nav > ul:after {
+        color: var(--white);
+        font-size: 1.5em;
+        font-weight: 300;
+        line-height: 1.3em;
+    }
+    body > nav > ul:before {
+        content: "{";
+    }
+    body > nav > ul:after {
+        content: "}";
+    }
+    body > nav > ul a {
+        color: var(--white);
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+    body > footer {
+        background-size: auto 100%;
+    }
+    body > footer > section.logo {
+        width: 20%;
+        background-size: 60%;
+        background-position: 60% 40%;
+    }
+    body > footer > section.contact {
+        width: 80%;
+        height: 120px;
+        margin-top: 300px;
+        text-align: right;
+        padding: 0;
+        padding-top: 70px;
+        padding-right: 5%;
+    }
+    body > footer > section.links {
+        display: block;
+        width: 80%;
+        height: 130px;
+        text-align: right;
+        padding: 0;
+        padding-right: 5%;
+    }
+    body > footer > section.links > article.social {
+        padding: 0;
+    }
+    body > footer > section.links > article.legal {
+        width: auto;
+        padding-right: 5%;
+        text-align: right;
+        padding-left: 2%;
+        padding: 0;
+        padding-left: 2%;
+    }
+    article#servicios br {
+        display: none;
+    }
+    article#servicios br.desktop {
+        display: inline;
+    }
+    article#servicios > section {
+        background-color: #f5f5f5;
+        font-size: 2em;
+    }
+    article#servicios > section > h3 {
+        padding: 0;
+        margin: 0;
+        margin-top: 1em;
+        background-size: auto 100%;
+        background-position: center;
+    }
+    article#servicios > section[data-name=NO] > h3 {
+        height: 150px;
+    }
+    article#proyectos {
+        grid-template-columns: 30% 30% 30%;
+        grid-column-gap: 5%;
+    }
+    article#proyectos > header {
+        grid-column: 1/4;
+    }
+    article#proyectos footer {
+        grid-column: 1/4;
+        background-image: url(../img/rabbit-on-chair.png);
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: left;
+        padding-left: 140px;
+        padding-top: 70px;
+    }
+    article#proyectos footer {
+        height: 200px;
+        margin-top: 80px;
+    }
+    article.main-article section.image-links {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    body > header,
+    body > nav {
+        height: 792px;
+    }
+    body > nav > ul {
+        grid-column-gap: 1.5em;
+    }
+    body > nav > ul:before,
+    body > nav > ul:after {
+        font-size: 2.5em;
+        line-height: 1.3em;
+    }
+    body > nav > ul a {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    body > header,
+    body > nav {
+        height: 1000px;
+    }
+}
