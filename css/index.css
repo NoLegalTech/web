@@ -6,6 +6,10 @@
     --dark-gray: #707070;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body, section, article, p, div, header, footer {
     box-sizing: border-box;
 }
@@ -246,6 +250,33 @@ article#proyectos nav a {
     body > nav {
         height: 600px;
     }
+    body > nav > ul {
+        display: grid;
+        list-style: none;
+        grid-template-columns: auto auto auto auto auto;
+        float: right;
+        text-transform: lowercase;
+        grid-column-gap: 0.5em;
+        padding-top: 2%;
+    }
+    body > nav > ul:before,
+    body > nav > ul:after {
+        color: var(--white);
+        font-size: 1.5em;
+        font-weight: 300;
+        line-height: 1.3em;
+    }
+    body > nav > ul:before {
+        content: "{";
+    }
+    body > nav > ul:after {
+        content: "}";
+    }
+    body > nav > ul a {
+        color: var(--white);
+        font-size: 1.5em;
+        font-weight: 300;
+    }
     body > footer {
         background-size: auto 100%;
     }
@@ -336,6 +367,17 @@ article#proyectos nav a {
     body > header,
     body > nav {
         height: 792px;
+    }
+    body > nav > ul {
+        grid-column-gap: 1.5em;
+    }
+    body > nav > ul:before,
+    body > nav > ul:after {
+        font-size: 2.5em;
+        line-height: 1.3em;
+    }
+    body > nav > ul a {
+        font-size: 2.5em;
     }
 }
 
