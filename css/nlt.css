@@ -219,25 +219,58 @@ article#proyectos nav a {
     font-size: 2em;
     padding: 10px 20px;
 }
+
 article#proyectos nav a:hover {
     background: var(--light-gray);
     text-decoration: none;
     box-shadow: 5px 5px 20px #707070;
 }
 
-article#legal {
+article.main-article {
     padding: 0 5%;
     padding-top: 50px;
     margin-bottom: 300px;
     font-size: 1.5em;
     background-color: var(--light-gray);
 }
-article#legal a {
+
+article.main-article h1,
+article.main-article h2,
+article.main-article h3,
+article.main-article h4,
+article.main-article h5 {
+    color: var(--nlt-blue);
+}
+
+article.main-article a {
     font-size: 1em;
 }
-article#legal blockquote {
+
+article.main-article blockquote {
     font-family: monospace;
     font-size: 0.9em;
+}
+
+article.main-article section.image-links {
+    display: grid;
+    grid-template-columns: auto;
+    grid-column-gap: 20px;
+}
+
+article.main-article section.image-links > a {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--dark-gray);
+}
+
+article.main-article section.image-links > a > img {
+    width: 100%;
+    opacity: 0.9;
+}
+
+article.main-article section.image-links > a:hover > img {
+    opacity: 1;
 }
 
 @media only screen and (min-width: 600px) {
@@ -270,7 +303,7 @@ article#legal blockquote {
         grid-column: 1/3;
         padding: 0;
     }
-    article#legal {
+    article.main-article {
         background-color: var(--white);
     }
 }
@@ -382,6 +415,9 @@ article#legal blockquote {
     article#proyectos footer {
         height: 200px;
         margin-top: 80px;
+    }
+    article.main-article section.image-links {
+        grid-template-columns: auto auto;
     }
 }
 
