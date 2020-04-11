@@ -1,0 +1,85 @@
+body {
+    background-color: #1995dc;
+    font-family: 'Montserrat', sans-serif;
+}
+img.barbara {
+    position: fixed;
+    width: auto;
+    height: 65%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    margin: auto 30px;
+}
+img.rabbit {
+    position: fixed;
+    width: auto;
+    height: 45%;
+    left: auto;
+    right: 0;
+    bottom: 12%;
+    margin: auto 30px;
+}
+h1 {
+    color: #1995DC;
+    font-size: 2em;
+    color: white;
+    margin-top: 40px;
+    font-size: 3em;
+}
+body > header {
+    padding-left: 30px;
+    position: fixed;
+    color: white;
+    height: 20%;
+    line-height: 20%;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+body > article {
+    height: 80%;
+}
+body > footer {
+    position: fixed;
+    color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0 10%;
+    padding-bottom: 20px;
+}
+a {
+    color: #ff990e;
+    font-weight: 600;
+    text-decoration: none;
+}
+a:hover {
+    color: #ff990e;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 600px) {
+    img.barbara { left: 5%; }
+    img.rabbit { right: 5%; }
+}
+
+@media only screen and (min-width: 1000px) {
+    img.barbara { left: 10%; }
+    img.rabbit { right: 10%; }
+}
+
+@media only screen and (min-width: 1440px) {
+    img.barbara { left: 15%; }
+    img.rabbit { right: 15%; }
+}
+
+@media only screen and (min-width: 1920px) {
+    img.barbara { left: 20%; }
+    img.rabbit { right: 20%; }
+}

@@ -292,6 +292,10 @@ article.grid {
     grid-row-gap: 30px;
 }
 
+article.grid img {
+    width: 100%;
+}
+
 section.image-card {
     width: 80%;
     margin: 0 auto;
