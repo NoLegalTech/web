@@ -24,6 +24,10 @@ a:hover {
     text-decoration: underline;
 }
 
+p.align-top {
+    margin-top: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -233,14 +237,25 @@ article#proyectos nav a:hover {
     box-shadow: 5px 5px 20px #707070;
 }
 
+article.intro-article,
 article.main-article {
     padding: 0 5%;
     padding-top: 50px;
-    margin-bottom: 300px;
+    padding-bottom: 30px;
+    margin: 0;
     font-size: 1.5em;
     background-color: var(--light-gray);
 }
 
+article.main-article {
+    padding-bottom: 300px;
+}
+
+article.intro-article h1,
+article.intro-article h2,
+article.intro-article h3,
+article.intro-article h4,
+article.intro-article h5,
 article.main-article h1,
 article.main-article h2,
 article.main-article h3,
@@ -258,26 +273,60 @@ article.main-article blockquote {
     font-size: 0.9em;
 }
 
-article.main-article section.image-links {
+section.image-links {
     display: grid;
     grid-template-columns: auto;
-    grid-column-gap: 20px;
+    grid-column-gap: 30px;
+    grid-template-rows: auto 100%;     /* WTH */
 }
 
-article.main-article section.image-links > a {
+section.image-links > a {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
     border: 1px solid var(--dark-gray);
 }
 
-article.main-article section.image-links > a > img {
+section.image-links > a > img {
     width: 100%;
     opacity: 0.9;
 }
 
-article.main-article section.image-links > a:hover > img {
+section.image-links > a:hover > img {
     opacity: 1;
+}
+
+article.big-grid,
+article.grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-column-gap: 2%;
+    grid-row-gap: 30px;
+}
+
+section.image-card {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid var(--dark-gray);
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 0;
+}
+
+section.image-links a,
+section.image-card a {
+    line-height: 0;
+}
+
+section.image-card img {
+    width: 100%;
+}
+
+section.image-card p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background: var(--white);
 }
 
 @media only screen and (min-width: 600px) {
@@ -313,8 +362,22 @@ article.main-article section.image-links > a:hover > img {
         grid-column: 1/3;
         padding: 0;
     }
+    article.intro-article,
     article.main-article {
         background-color: var(--white);
+    }
+    article.grid {
+        grid-template-columns: auto auto;
+    }
+    article.grid h1,
+    article.grid h2,
+    article.grid h3,
+    article.grid h4,
+    article.grid h5 {
+        grid-column: 1 / 3;
+    }
+    section.image-card p {
+        background: var(--light-gray);
     }
 }
 
@@ -438,8 +501,28 @@ article.main-article section.image-links > a:hover > img {
         height: 200px;
         margin-top: 80px;
     }
-    article.main-article section.image-links {
+    section.image-links {
         grid-template-columns: auto auto;
+    }
+    article.grid {
+        grid-template-columns: auto auto auto;
+    }
+    article.grid h1,
+    article.grid h2,
+    article.grid h3,
+    article.grid h4,
+    article.grid h5 {
+        grid-column: 1 / 4;
+    }
+    article.big-grid {
+        grid-template-columns: auto auto;
+    }
+    article.big-grid h1,
+    article.big-grid h2,
+    article.big-grid h3,
+    article.big-grid h4,
+    article.big-grid h5 {
+        grid-column: 1 / 3;
     }
 }
 
@@ -459,11 +542,51 @@ article.main-article section.image-links > a:hover > img {
     body > nav > ul a {
         font-size: 2.5em;
     }
+    article.grid {
+        grid-template-columns: auto auto auto auto;
+    }
+    article.grid h1,
+    article.grid h2,
+    article.grid h3,
+    article.grid h4,
+    article.grid h5 {
+        grid-column: 1 / 5;
+    }
+    article.big-grid {
+        grid-template-columns: auto auto auto;
+    }
+    article.big-grid h1,
+    article.big-grid h2,
+    article.big-grid h3,
+    article.big-grid h4,
+    article.big-grid h5 {
+        grid-column: 1 / 4;
+    }
 }
 
 @media only screen and (min-width: 1920px) {
     body > header,
     body > nav {
         height: 1000px;
+    }
+    article.grid {
+        grid-template-columns: auto auto auto auto auto;
+    }
+    article.grid h1,
+    article.grid h2,
+    article.grid h3,
+    article.grid h4,
+    article.grid h5 {
+        grid-column: 1 / 6;
+    }
+    article.big-grid {
+        grid-template-columns: auto auto auto auto;
+    }
+    article.big-grid h1,
+    article.big-grid h2,
+    article.big-grid h3,
+    article.big-grid h4,
+    article.big-grid h5 {
+        grid-column: 1 / 5;
     }
 }
