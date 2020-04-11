@@ -269,25 +269,25 @@ article.main-article blockquote {
     font-size: 0.9em;
 }
 
-article.main-article section.image-links {
+section.image-links {
     display: grid;
     grid-template-columns: auto;
     grid-column-gap: 20px;
 }
 
-article.main-article section.image-links > a {
+section.image-links > a {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
     border: 1px solid var(--dark-gray);
 }
 
-article.main-article section.image-links > a > img {
+section.image-links > a > img {
     width: 100%;
     opacity: 0.9;
 }
 
-article.main-article section.image-links > a:hover > img {
+section.image-links > a:hover > img {
     opacity: 1;
 }
 
@@ -307,6 +307,7 @@ section.image-card {
     grid-row-gap: 0;
 }
 
+section.image-links a,
 section.image-card a {
     line-height: 0;
 }
@@ -481,7 +482,7 @@ section.image-card p {
         height: 200px;
         margin-top: 80px;
     }
-    article.main-article section.image-links {
+    section.image-links {
         grid-template-columns: auto auto;
     }
 }
