@@ -106,15 +106,10 @@ body > footer > section.logo > a {
 body > footer > section.links {
     padding: 0;
     height: 130px;
-    display: grid;
-    grid-template-columns: auto auto;
+    display: block;
 }
 
-body > footer > section.links > article {
-    display: inline-block;
-}
-
-body > footer > section.links > article.social a {
+body > footer > section.links > a.social {
     width: 50px;
     height: 50px;
     background-size: 80%;
@@ -122,31 +117,23 @@ body > footer > section.links > article.social a {
     display: inline-block;
     background-color: var(--nlt-blue);
     background-repeat: no-repeat;
+    margin-bottom: -15px;
+    margin-top: 10px;
 }
 
-body > footer > section.links > article.social {
-    padding: 0;
-    text-align: right;
-}
-
-body > footer > section.links > article.social a.twitter {
+body > footer > section.links > a.twitter {
     background-image: url(../img/twitter.png);
 }
 
-body > footer > section.links > article.social a.instagram {
+body > footer > section.links > a.instagram {
     background-image: url(../img/instagram.png);
 }
 
-body > footer > section.links > article.legal {
-    float: right;
-    text-align: left;
-    padding: 0;
-    line-height: 50px;
-    padding-left: 5%;
+body > footer > section.links > a.legal {
+    margin-left: 15px;
 }
 
-body > footer > section.links > article.social,
-body > footer > section.links > article.legal {
+body > footer > section.links {
     padding-bottom: 100px;
 }
 
@@ -443,23 +430,11 @@ section.image-card p {
         padding-right: 5%;
     }
     body > footer > section.links {
-        display: block;
         width: 80%;
         height: 130px;
         text-align: right;
         padding: 0;
         padding-right: 5%;
-    }
-    body > footer > section.links > article.social {
-        padding: 0;
-    }
-    body > footer > section.links > article.legal {
-        width: auto;
-        padding-right: 5%;
-        text-align: right;
-        padding-left: 2%;
-        padding: 0;
-        padding-left: 2%;
     }
     article#servicios br {
         display: none;
