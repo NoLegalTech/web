@@ -264,7 +264,7 @@ section.image-links {
     display: grid;
     grid-template-columns: auto;
     grid-column-gap: 30px;
-    grid-template-rows: auto 100%;     /* WTH */
+    grid-template-rows: auto auto;
 }
 
 section.image-links > a {
@@ -478,6 +478,7 @@ section.image-card p {
     }
     section.image-links {
         grid-template-columns: auto auto;
+        grid-template-rows: auto 100%;
     }
     article.grid {
         grid-template-columns: auto auto auto;
