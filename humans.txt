@@ -1,0 +1,35 @@
+/* TEAM */
+    Software Sculptor: Pepe Doval
+    Contact: thefuckingmaster@nolegaltech.com
+    Twitter: @pepellou
+    From: Milladoiro
+
+    CEO and Content Master: Bárbara Román
+    Contact: hola@nolegaltech.com
+    Twitter: @NoLegaltech
+    From: Santiago de Compostela
+
+    Legal Beast: María Cerviño
+    Contact: lacervi@nolegaltech.com
+    Twitter: @NoLegaltech
+    From: Vigo
+
+/* THANKS */
+
+    Rabbits Drawings: Marelisa
+    Twitter: @MarelisaBlanco
+    From: Valencia
+
+    Web Design: Xavier Belho
+    Twitter: @xavierbelho
+    From: Vilagarcía de Arousa
+
+    Logo Design: Iñaki Quenerapu
+    Twitter: @quenerapu
+    From: Santiago de Compostela
+
+/* SITE */
+    Last update: 2020/04/13
+    Language: Castellano
+    Doctype: HTML5
+    IDE: vim, gimp
