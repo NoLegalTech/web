@@ -38,6 +38,7 @@ body > nav {
     position: absolute;
     width: 95%;
     height: 300px;
+    max-height: 100%;
     margin-right: 5%;
     background-image: url(../img/rabbit.png);
     background-size: auto 25%;
