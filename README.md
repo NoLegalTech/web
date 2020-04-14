@@ -11,3 +11,23 @@
 </a>
 <br /> Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>.
 </p>
+
+
+## How to contribute
+
+Just browse [the issues list](https://github.com/NoLegalTech/web/issues) to participate of all the feedback discussions,
+or make PRs to solve any issues :grimacing:
+
+
+## Local installation
+
+1) Clone this repo
+
+2) Open `index.html` on any browser
+
+
+## Key features
+
+    - Responsive
+    - No javascript at all
+    - No divs or spans (just semantic HTML)
