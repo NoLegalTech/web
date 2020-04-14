@@ -1,10 +1,10 @@
 <h1 align="center">nolegaltech.com</h1>
 
-<p align="center">This is the source code of the website</p>
+<p align="center">Este es el código fuente de nuestra web</p>
 
 <p align="center"><a target="_blank" href="http://nolegaltech.com">http://nolegaltech.com</a></p>
 
-<p align="center">See the current dev version of the website here: <a target="_blank" href="https://NoLegalTech.github.io/web">https://NoLegalTech.github.io/web</a></p>
+<p align="center">Esta es la versión actual de desarrollo: <a target="_blank" href="https://NoLegalTech.github.io/web">https://NoLegalTech.github.io/web</a></p>
 
 <p align="center"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
     <img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
@@ -13,21 +13,21 @@
 </p>
 
 
-## How to contribute
+## Cómo contribuir
 
-Just browse [the issues list](https://github.com/NoLegalTech/web/issues) to participate of all the feedback discussions,
-or make PRs to solve any issues :grimacing:
-
-
-## Local installation
-
-1) Clone this repo
-
-2) Open `index.html` on any browser
+Explora [la lista de issues](https://github.com/NoLegalTech/web/issues) para dar feedback o aportar a las discusiones,
+o haz PRs que resuelvan alguna issue :grimacing:
 
 
-## Key features
+## Instalación local
+
+1) Clonar este repositorio
+
+2) Abrir `index.html` en cualquier navegador
+
+
+## Características clave
 
     - Responsive
-    - No javascript at all
-    - No divs or spans (just semantic HTML)
+    - Nada de javascript
+    - Ningún div ni span (sólo HTML semántico)
