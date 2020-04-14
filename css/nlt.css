@@ -239,7 +239,17 @@ article.main-article {
     padding-bottom: 30px;
     margin: 0;
     font-size: 1.5em;
-    background-color: var(--light-gray);
+    background: var(--white);
+}
+
+article.main-article {
+    background: -moz-linear-gradient(top, var(--white) var(--bottom-gradient-starts-at), var(--dark-gray) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(var(--bottom-gradient-starts-at), var(--white)), color-stop(100%, var(--dark-gray)));
+    background: -webkit-linear-gradient(top, var(--white) var(--bottom-gradient-starts-at), var(--dark-gray) 100%);
+    background: -o-linear-gradient(top, var(--white) var(--bottom-gradient-starts-at), var(--dark-gray) 100%);
+    background: -ms-linear-gradient(top, var(--white) var(--bottom-gradient-starts-at), var(--dark-gray) 100%);
+    background: linear-gradient(to bottom, var(--white) var(--bottom-gradient-starts-at), var(--dark-gray) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#707070', GradientType=0 );
 }
 
 article.main-article {
